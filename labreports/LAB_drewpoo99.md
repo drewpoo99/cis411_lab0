@@ -71,9 +71,9 @@ ce1fcea circleci default config
   * The `workflows` are used for orchestrating all jobs. Since there is only one job, the workflow only executes the `build-and-test` job. 
 
 - When a CI build is successful, what does that philosophically and practically/precisely indicate about the build?
-  When a CI build is successful, it means that the newest code was run in a `job` and that it has passed any `steps` or tests set up to inspect the code. This means that the most recent push of code is able to be integrated into a master branch and all of the features checkout, there are no errors in the code or in the repository.
+  * When a CI build is successful, it means that the newest code was run in a `job` and that it has passed any `steps` or tests set up to inspect the code. This means that the most recent push of code is able to be integrated into a master branch and all of the features checkout, there are no errors in the code or in the repository.
 - If you were to take the next step and ready this project for Continuous Delivery, what additional changes might you make in this configuration (conceptual, not code)?
-  As an example, if we were to deploy to Heroku (*foreshadowing!*), we would add the Heroku `orb`. We can then use a `workflow` to deploy using that Heroku `orb` after some other `jobs` were completed. I assume an `orb` is like a API endpoint sort of thing and CircleCI uses them to do a bunch of stuff behind the scenes for us. (Like deploying to Heroku when we use the orb). 
+  * As an example, if we were to deploy to Heroku (*foreshadowing!*), we would add the Heroku `orb`. We can then use a `workflow` to deploy using that Heroku `orb` after some other `jobs` were completed. I assume an `orb` is like a API endpoint sort of thing and CircleCI uses them to do a bunch of stuff behind the scenes for us. (Like deploying to Heroku when we use the orb). 
 
 # Step 5: Merging the feature branch
 * The output of my git commit log
